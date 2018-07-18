@@ -15,9 +15,7 @@ class App extends Component {
   }
 
   showDetail = ((movie) => {
-
       console.log(movie)
-
       })
 
 
