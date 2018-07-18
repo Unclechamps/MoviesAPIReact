@@ -1,0 +1,165 @@
+body {
+  width: 100%;
+  margin: auto;
+  font-family: Sunflower, helvetica, sans-serif;
+  color: white;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size:  cover;
+  min-height: 910px;
+  font-size: 1.1em;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.movieList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.movie {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  align-items: center;
+  width: 16%;
+}
+
+.movie a {
+  text-align: center;
+  text-decoration: none;
+}
+
+a:link {
+  color: #fff;
+}
+
+a:visited {
+  color: #ecf0f1;
+}
+
+a:hover {
+  color: red;
+}
+
+
+.poster {
+  height: 100px;
+  width: 75px;
+}
+
+/* MOVIE DETAIL */
+
+.movieDetail {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  margin: auto;
+
+}
+
+.title {
+  text-align: center;
+  width: 60%;
+}
+
+.detail {
+  margin-left: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+}
+
+/* Large Devices, Wide Screens */
+/* @media only screen and (max-width : 1200px) {
+
+} */
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+body {
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+
+}
+
+.movieDetail {
+  width: 80%;
+  margin: auto;
+  justify-content: center;
+}
+
+.detail {
+  width: 50%;
+  align-items:  center;
+  font-size: 1.1em
+
+}
+
+.title {
+  width: 50%;
+  margin: 0;
+}
+
+.movie a {
+  font-size: 1.2em;
+}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+.movie {
+  width: 40%;
+  font-size: 1.2em;
+}
+
+.movieDetail {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.detail {
+  width: 100%;
+  margin: 0;
+}
+
+.title {
+  width: 100%;
+}
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+.movie {
+  width: 100%;
+  font-size: 1.1em;
+}
+
+.poster {
+  height: 250px;
+  width: 175px;
+}
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
